@@ -114,10 +114,16 @@ var embedding = {
   dimensions: embeddingDimensions != 0 ? embeddingDimensions : 1536
 }
 
-param gpt4vModelName string = 'gpt-4o'
-param gpt4vDeploymentName string = 'gpt-4o'
-param gpt4vModelVersion string = '2024-05-13'
+//param gpt4vModelName string = 'gpt-4o'
+//param gpt4vDeploymentName string = 'gpt-4o'
+//param gpt4vModelVersion string = '2024-05-13'
+//param gpt4vDeploymentCapacity int = 10
+
+param gpt4vModelName string = 'gpt-4'
+param gpt4vDeploymentName string = 'gpt-4'
+param gpt4vModelVersion string = '1106-Preview'
 param gpt4vDeploymentCapacity int = 10
+
 
 param tenantId string = tenant().tenantId
 param authTenantId string = ''
