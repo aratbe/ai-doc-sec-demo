@@ -18,10 +18,10 @@ class ChatUser(HttpUser):
                     {
                         "content": random.choice(
                             [
-                                "What is included in my Northwind Health Plus plan that is not in standard?",
-                                "What does a Product Manager do?",
-                                "What happens in a performance review?",
-                                "Whats your whistleblower policy?",
+                               "What hardening topics are covered in the NIST 800-123 guideline?",
+                                "What does BMS stands for?",
+                                "Should a BMS network be connected to the internet?",
+                                "What year the NIST 800-123 is published",
                             ]
                         ),
                         "role": "user",
@@ -43,12 +43,12 @@ class ChatUser(HttpUser):
             "/chat",
             json={
                 "messages": [
-                    {"content": "What happens in a performance review?", "role": "user"},
+                    {"content": "Should a BMS network be connected to the internet?", "role": "user"},
                     {
-                        "content": "During a performance review, employees will receive feedback on their performance over the past year, including both successes and areas for improvement. The feedback will be provided by the employee's supervisor and is intended to help the employee develop and grow in their role [employee_handbook-3.pdf]. The review is a two-way dialogue between the employee and their manager, so employees are encouraged to be honest and open during the process [employee_handbook-3.pdf]. The employee will also have the opportunity to discuss their goals and objectives for the upcoming year [employee_handbook-3.pdf]. A written summary of the performance review will be provided to the employee, which will include a rating of their performance, feedback, and goals and objectives for the upcoming year [employee_handbook-3.pdf].",
+                        "content": "No, it should not be connected to the internet. [EBM Hardening.pdf]. Section 1.3 on page 5 states that: Requirement #1 – BMS networks MUST BE isolated from the Internet. [EBM Hardening.pdf]",
                         "role": "assistant",
                     },
-                    {"content": "Does my plan cover eye exams?", "role": "user"},
+                    {"content": "Can EcoStruxure BMS servers be connetced directly to the Internet?", "role": "user"},
                 ],
                 "context": {
                     "overrides": {
