@@ -42,7 +42,7 @@ const Layout = () => {
                             </li>
                         </ul>
                     </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI + AI Searc</h4>
+                    <h4 className={styles.headerRightText}>Demo is Built on Azure</h4>
                     {useLogin && <LoginButton />}
                 </div>
             </header>

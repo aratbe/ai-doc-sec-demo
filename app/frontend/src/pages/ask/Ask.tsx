@@ -231,7 +231,7 @@ export function Component(): JSX.Element {
                 <h1 className={styles.askTitle}>Ask your data</h1>
                 <div className={styles.askQuestionInput}>
                     <QuestionInput
-                        placeholder="Example: Does my plan cover annual eye exams?"
+                        placeholder="Example: Does NIST 800-82 has any reference architecture for DCS security?"
                         disabled={isLoading}
                         initQuestion={question}
                         onSend={question => makeApiRequest(question)}
