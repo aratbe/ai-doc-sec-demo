@@ -18,7 +18,7 @@ class RetrieveThenReadApproach(Approach):
     """
 
     system_chat_template = (
-        "You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. "
+        "You are an intelligent assistant helping users with cybersecurity questions and regulations related to cybersecurity and AI "
         + "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. "
         + "Answer the following question using only the data provided in the sources below. "
         + "For tabular information return it as an html table. Do not return markdown format. "
@@ -28,16 +28,14 @@ class RetrieveThenReadApproach(Approach):
 
     # shots/sample conversation
     question = """
-'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+'can a user uses remember me feature of their browser for their convenience to autofill credentials?'
 
 Sources:
-info1.txt: deductibles depend on whether you are in-network or out-of-network. In-network deductibles are $500 for employee and $1000 for family. Out-of-network deductibles are $1000 for employee and $2000 for family.
-info2.pdf: Overlake is in-network for the employee plan.
-info3.pdf: Overlake is the name of the area that includes a park and ride near Bellevue.
-info4.pdf: In-network institutions include Overlake, Swedish and others in the region
+info2.pdf: For installations requiring that web browsers or password management do not automatically fill in credentials
+info3.pdf: automatically fill features in the web browsers store filled data locally
+info4.pdf: Remember me feature is an auto fill.
 """
-    answer = "In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf]."
-
+    answer = "Remember me is an auto fill feature in system browsers [info4.pdf] and auto fills are stored locally [info3.pdf]. Therefore remeber me should not be used for auto fill of credentials in broswer[info2.pdf][info3.pdf]."
     def __init__(
         self,
         *,
