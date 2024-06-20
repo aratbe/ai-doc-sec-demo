@@ -14,7 +14,7 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GenAI demo in Cybersecurity and egulation</h3>
+                        <h3 className={styles.headerTitle}>GenAI demo in Cybersecurity and Regulation</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
