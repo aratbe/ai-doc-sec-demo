@@ -75,7 +75,7 @@ class ChatVisionUser(HttpUser):
             json={
                 "messages": [
                     {
-                        "content": "Can you identify any correlation between oil prices and stock market trends?",
+                        "content": "Can take the defense-in-depth security architecture for a DCS system suggested in the NIST and compare it with Schneider Electric Machine Solutions architecture?",
                         "role": "user",
                     }
                 ],
@@ -104,7 +104,7 @@ class ChatVisionUser(HttpUser):
             "/chat/stream",
             json={
                 "messages": [
-                    {"content": "Compare the impact of interest rates and GDP in financial markets.", "role": "user"}
+                    {"content": "Compare the password policy suggested in the Schneider electric documents with NIST standard", "role": "user"}
                 ],
                 "context": {
                     "overrides": {
