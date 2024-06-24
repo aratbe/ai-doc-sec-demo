@@ -10,10 +10,10 @@ from approaches.approach import Approach
 
 class ChatApproach(Approach, ABC):
     query_prompt_few_shots: list[ChatCompletionMessageParam] = [
-        {"role": "user", "content": "How did crypto do last year?"},
-        {"role": "assistant", "content": "Summarize Cryptocurrency Market Dynamics from last year"},
-        {"role": "user", "content": "What are my health plans?"},
-        {"role": "assistant", "content": "Show available health plans"},
+        {"role": "user", "content": "what are the general componenets of a SCADA system?"},
+        {"role": "assistant", "content": "Summarize SCADA system descrition. List names of conponenets in the SCADA system layout figure"},
+        {"role": "user", "content": "What are the main steps for securing a Modicon M262?"},
+        {"role": "assistant", "content": "Show the list of cybersecurity topics in device hardening of Modicon M262"},
     ]
     NO_RESPONSE = "0"
 
